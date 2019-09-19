@@ -1,0 +1,2 @@
+.complete{background-color:green}.incomplete{background-color:red}.complete,.incomplete{display:inline-block;width:20px;height:50px}body{margin:0;padding:0}.item{height:50px;line-height:50px;margin:10px;border:1px solid #9e9e9e;display:flex;justify-content:space-between;width:100%}.itemsSection{display:flex;flex-direction:column;align-items:center}.logo{width:2rem;height:2rem}
+/*# sourceMappingURL=main.599d49f7.chunk.css.map */
