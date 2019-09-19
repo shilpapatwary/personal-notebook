@@ -5,6 +5,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
+import logo from '../assets/todo_logo.png';
 
 interface Items {
     items: ItemData[],
@@ -42,16 +43,17 @@ class ToDoList  extends Component<itemProps, Items> {
     render() {
       return (
         <section>
-          <section id="todoHeader">
-                  <AppBar  position="static" style= {{backgroundColor: 'blue', marginBottom:"10px"}}>
-                  <Typography variant="title" style= {{lineHeight: '50px', color:"white", textAlign:"center"}}>
-                          To Do Lists
-                      </Typography>
-                  </AppBar>
+          <section id="todoHeader" style={{marginBottom: "2rem"}}>
+            <AppBar position="static" style={{ backgroundColor: '#000000', marginBottom: "10px", color: '#ffffff' }}>
+              <Typography variant="title" style={{ lineHeight: '50px', color: "#ffffff", display:"flex", alignItems:"center"}}>
+              <img src={logo} className="logo" style={{paddingLeft:"1rem"}}></img>
+              <span style={{paddingLeft:"1rem"}}>To Do</span>
+              </Typography>
+            </AppBar>
               </section>
               
             <section className="itemsSection">
-              <Button style={{border:"1px solid blue", marginLeft:"5px", borderRadius:"5px"}} onClick={this.addItem}>Add a list</Button>
+              <Button style={{border:"1px solid #000000", marginLeft:"5px", borderRadius:"5px",color:"#ffffff", backgroundColor:"#00000091", letterSpacing: "1.65px"}} onClick={this.addItem}>Add a list</Button>
               <div className="ItemsContainer">
               <Grid container spacing={24} style={{padding: '24px 0 24px 0'}}>
                   {

@@ -52,7 +52,7 @@ class Item  extends Component<ItemProps, itemState> {
     render() {
       return (
         <div className="item">
-          <input style={{paddingLeft:"15px"}} name="itemName" value={this.state.itemName} onChange={this.inputChange} onKeyDown={this.editItem}/>
+          <input style={{paddingLeft:"15px", width: "70%"}} name="itemName" value={this.state.itemName} onChange={this.inputChange} onKeyDown={this.editItem}/>
           <div>
             <span style={{marginRight:"10px", verticalAlign:"top", fontWeight:"bold", padding:"10px", cursor:"pointer", fontSize:"x-large"}} onClick={this.moveItem}>&#8595;</span>
             <span style={{paddingLeft:"30px", color: 'red', cursor:"pointer", verticalAlign:"top", fontSize:"x-large"}} onClick={this.removeItem}>x</span>

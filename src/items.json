@@ -2,12 +2,12 @@
     "items": [
         {
             "id": "12345",
-            "name": "item1",
+            "name": "Send daily status mail",
             "isComplete": false
         },
         {
             "id": "12365",
-            "name": "item2",
+            "name": "update records",
             "isComplete": false
         }
     ]
